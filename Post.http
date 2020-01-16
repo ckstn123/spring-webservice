@@ -1,0 +1,9 @@
+POST http://localhost:8080/posts
+Content-Type: application/json
+{
+    "title": "테스트 타이틀2",
+    "content": "테스트 본문2",
+    "author": "테스터2"
+}
+
+###
