@@ -17,12 +17,6 @@ cache:
 
 script: "./gradlew clean build"
 
-# CI 실행 완료시 메일로 알람
-notifications:
-  email:
-    recipients:
-      - whckstn12@naver.com
-
 deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
@@ -35,3 +29,10 @@ deploy:
     on:
       repo: ckstn123/spring-webservice #Github 주소
       branch: master
+
+# CI 실행 완료시 메일로 알람
+notifications:
+  email:
+    recipients:
+      - whckstn12@naver.com
+
