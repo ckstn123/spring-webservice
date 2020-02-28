@@ -4,7 +4,7 @@ plugins {
     id 'java'
 }
 
-group = 'com.jojoldu'
+group = 'com.chansu'
 version = '0.0.3'
 sourceCompatibility = '1.8'
 

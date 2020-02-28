@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>게시글</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--부트스트랩 css 추가-->
+    <link rel="stylesheet" href="/css/lib/bootstrap.min.css">
+</head>
+<body>
+    <table class = "table table-horizontal table-bordered">
+        <tr>
+            <td>글 번호 : {{post.id}}</td>
+            <td>글 제목 : {{post.title}}</td>
+            <td>글 작성자 : {{post.author}}</td>
+        </tr>
+        <tr>
+            <td colspan="3">{{post.content}}</td>
+        </tr>
+        <tr>
+            <button type="button" class="btn btn-list" id="btn-list">목록으로</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modifyPostModal">수정</button>
+            <button type="button" class="btn btn-delete" id="btn-delete">삭제</button>
+            <input type="hidden" id="delete-id" value="{{post.id}}">
+        </tr>
+    </table>
+
+    <!-- Modal 영역 -->
+    <div class="modal fade" id="modifyPostModal" tabindex="-1" role="dialog" aria-labelledby="modifyPostLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modifyPostLabel">게시글 수정</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="title">제목</label>
+                            <input type="text" class="form-control" id="title" placeholder="제목을 입력하세요" value="{{post.title}}">
+                            <input type="hidden" id="id" value="{{post.id}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="author"> 작성자 </label>
+                            <input type="text" class="form-control" id="author" placeholder="작성자를 입력하세요" value="{{post.author}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="content"> 내용 </label>
+                            <textarea class="form-control" id="content" placeholder="내용을 입력하세요" value="{{post.content}}"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary" id="btn-modify">수정</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--부트스트랩 js, jquery 추가-->
+        <script src="/js/lib/jquery.min.js"></script>
+        <script src="/js/lib/bootstrap.min.js"></script>
+    <!--custom js 추가-->
+        <script src="/js/app/post.js"></script>
+</body>
+</html>
+
