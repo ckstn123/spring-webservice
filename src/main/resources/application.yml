@@ -18,6 +18,9 @@ spring:
   h2:
     console:
       enabled: true
+  datasource:
+    hikari:
+      jdbc-url: jdbc:h2:mem://localhost/~/testdb;MODE=MYSQL
 
 # 운영 환경
 ---
