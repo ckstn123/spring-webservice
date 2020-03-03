@@ -6,27 +6,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/SpringWebserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/SpringWebserviceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/domain/posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/domain/posts/Posts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/dto/PostInfoResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/dto/posts/PostInfoResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/dto/PostsMainResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/dto/posts/PostsMainResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/service/PostsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/service/PostsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/web/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/web/WebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/web/WebRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/web/WebRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data-h2.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/chansu/webservice/domain/posts/PostsRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/chansu/webservice/domain/posts/PostsRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/chansu/webservice/service/PostServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/chansu/webservice/service/PostServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/chansu/webservice/web/WebControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/chansu/webservice/web/WebControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/chansu/webservice/web/WebRestControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/chansu/webservice/web/WebRestControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +213,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringWebserviceApplication">
+  <component name="RunManager" selected="Spring Boot.[set1] SpringWebserviceApplication ">
     <configuration name="PostServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -381,7 +364,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Failed" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -434,7 +417,7 @@
       <workItem from="1583150083955" duration="1118000" />
       <workItem from="1583157666694" duration="23000" />
       <workItem from="1583213410238" duration="10394000" />
-      <workItem from="1583224336093" duration="8612000" />
+      <workItem from="1583224336093" duration="9308000" />
     </task>
     <servers />
   </component>
@@ -505,38 +488,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="674" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583216153707" />
-    <state width="1031" height="198" key="GridCell.Tab.0.bottom" timestamp="1583233137782">
+    <state width="1031" height="198" key="GridCell.Tab.0.bottom" timestamp="1583233659559">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1031" height="198" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583233137782" />
-    <state width="1031" height="198" key="GridCell.Tab.0.center" timestamp="1583233137782">
+    <state width="1031" height="198" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583233659559" />
+    <state width="1031" height="198" key="GridCell.Tab.0.center" timestamp="1583233659559">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1031" height="198" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583233137782" />
-    <state width="1031" height="198" key="GridCell.Tab.0.left" timestamp="1583233137782">
+    <state width="1031" height="198" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583233659559" />
+    <state width="1031" height="198" key="GridCell.Tab.0.left" timestamp="1583233659559">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1031" height="198" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583233137782" />
-    <state width="1031" height="198" key="GridCell.Tab.0.right" timestamp="1583233137782">
+    <state width="1031" height="198" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583233659559" />
+    <state width="1031" height="198" key="GridCell.Tab.0.right" timestamp="1583233659559">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1031" height="198" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583233137782" />
-    <state width="1031" height="198" key="GridCell.Tab.1.bottom" timestamp="1583233137782">
+    <state width="1031" height="198" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583233659559" />
+    <state width="1031" height="198" key="GridCell.Tab.1.bottom" timestamp="1583233659560">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1031" height="198" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583233137782" />
-    <state width="1031" height="198" key="GridCell.Tab.1.center" timestamp="1583233137782">
+    <state width="1031" height="198" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583233659560" />
+    <state width="1031" height="198" key="GridCell.Tab.1.center" timestamp="1583233659560">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1031" height="198" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583233137782" />
-    <state width="1031" height="198" key="GridCell.Tab.1.left" timestamp="1583233137782">
+    <state width="1031" height="198" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583233659560" />
+    <state width="1031" height="198" key="GridCell.Tab.1.left" timestamp="1583233659560">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1031" height="198" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583233137782" />
-    <state width="1031" height="198" key="GridCell.Tab.1.right" timestamp="1583233137782">
+    <state width="1031" height="198" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583233659560" />
+    <state width="1031" height="198" key="GridCell.Tab.1.right" timestamp="1583233659560">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1031" height="198" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583233137782" />
+    <state width="1031" height="198" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583233659560" />
     <state width="1031" height="-12" key="GridCell.Tab.2.bottom" timestamp="1583230948886">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
