@@ -3,13 +3,23 @@ package com.chansu.webservice.service;
 import com.chansu.webservice.dto.posts.PostsSaveRequestDto;
 import com.chansu.webservice.domain.posts.Posts;
 import com.chansu.webservice.domain.posts.PostsRepository;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Test;
+import org.junit.After;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+
+/**
+ * Created by jojoldu@gmail.com on 2018. 1. 1.
+ * Blog : http://jojoldu.tistory.com
+ * Github : https://github.com/jojoldu
+ */
+
+@RunWith(SpringRunner.class)
 @SpringBootTest
 public class PostServiceTest {
 
@@ -19,7 +29,7 @@ public class PostServiceTest {
     @Autowired
     private PostsRepository postsRepository;
 
-    @AfterEach
+    @After
     public void cleanup () {
         postsRepository.deleteAll();
     }

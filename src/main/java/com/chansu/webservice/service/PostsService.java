@@ -1,10 +1,10 @@
 package com.chansu.webservice.service;
 
-import com.chansu.webservice.dto.PostInfoResponseDto;
+import com.chansu.webservice.dto.posts.PostInfoResponseDto;
 import com.chansu.webservice.dto.posts.PostsModifyRequestDto;
 import com.chansu.webservice.dto.posts.PostsSaveRequestDto;
 import com.chansu.webservice.domain.posts.PostsRepository;
-import com.chansu.webservice.dto.PostsMainResponseDto;
+import com.chansu.webservice.dto.posts.PostsMainResponseDto;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

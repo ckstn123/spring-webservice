@@ -19,10 +19,10 @@ public class WebController {
         return "main";
     }
 
-    @GetMapping("/posts")
-    public String posts(@RequestParam(name="id", defaultValue="0") Long id, Model model){
-        model.addAttribute("post", postsService.findPosts(id));
-        return "post";
-    }
+//    @GetMapping("/posts")
+//    public String posts(@RequestParam(name="id", defaultValue="0") Long id, Model model){
+//        model.addAttribute("post", postsService.findPosts(id));
+//        return "post";
+//    }
 
 }

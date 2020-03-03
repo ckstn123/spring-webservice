@@ -1,4 +1,4 @@
-package com.chansu.webservice.dto;
+package com.chansu.webservice.dto.posts;
 
 import com.chansu.webservice.domain.posts.Posts;
 import lombok.Getter;

@@ -23,7 +23,6 @@ public class Posts extends BaseTimeEntity {
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
 
-    @Column
     private String author;
 
     @Builder
