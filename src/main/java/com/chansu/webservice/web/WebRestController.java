@@ -5,10 +5,8 @@ import com.chansu.webservice.dto.posts.PostsSaveRequestDto;
 import com.chansu.webservice.service.PostsService;
 import lombok.AllArgsConstructor;
 import org.springframework.core.env.Environment;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 
 import java.util.Arrays;
@@ -25,12 +23,6 @@ public class WebRestController {
         return "HelloWorld";
     }
 
-    @PostMapping("/posts")
-    public Long savePosts(@RequestBody PostsSaveRequestDto dto){
-
-        return postsService.save(dto);
-    }
-
     @GetMapping("/profile")
     public String getProfile () {
         return Arrays.stream(env.getActiveProfiles())
@@ -39,12 +31,19 @@ public class WebRestController {
                         .orElse("");
     }
 
-    @PostMapping("/posts/modify")
+    @PostMapping("/posts")
+    public Long savePosts(@RequestBody PostsSaveRequestDto dto){
+
+        return postsService.save(dto);
+    }
+
+
+    @PutMapping("/posts")
     public Long postsModify(@RequestBody PostsModifyRequestDto dto){
         return postsService.modify(dto);
     }
 
-    @PostMapping("/posts/delete")
+    @DeleteMapping("/posts")
     public Long postDelete(@RequestBody Long id){
         return postsService.delete(id);
     }

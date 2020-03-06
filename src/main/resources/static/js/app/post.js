@@ -25,8 +25,8 @@ var post = {
             };
 
             $.ajax({
-                type: 'POST',
-                url: '/posts/modify',
+                type: 'PUT',
+                url: '/posts',
                 dataType: 'json',
                 contentType: 'application/json; charset=utf-8',
                 data: JSON.stringify(data)
@@ -44,8 +44,8 @@ var post = {
             var data = $('#delete-id').val();
 
             $.ajax({
-                type: 'POST',
-                url: '/posts/delete',
+                type: 'DELETE',
+                url: '/posts',
                 dataType: 'json',
                 contentType: 'application/json; charset=utf-8',
                 data: data

@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.stream.Stream;
 
+//DAO 역할 DB Layer 접근자
 public interface PostsRepository extends JpaRepository<Posts, Long> {
     //게시글 목록 조회
     @Query("SELECT p " +

@@ -1,6 +1,7 @@
 package com.chansu.webservice.dto.posts;
 
 import com.chansu.webservice.domain.posts.Posts;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
