@@ -36,8 +36,7 @@ public class WebRestController {
 
         return postsService.save(dto);
     }
-
-
+    
     @PutMapping("/posts")
     public Long postsModify(@RequestBody PostsModifyRequestDto dto){
         return postsService.modify(dto);

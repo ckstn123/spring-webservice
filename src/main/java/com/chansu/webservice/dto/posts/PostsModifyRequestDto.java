@@ -15,6 +15,7 @@ public class PostsModifyRequestDto {
     private String content;
     private String author;
 
+    @Builder
     public Posts toEntity(){
         return Posts.builder()
                 .title(title)
