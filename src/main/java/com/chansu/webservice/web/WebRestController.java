@@ -5,9 +5,7 @@ import com.chansu.webservice.dto.posts.PostsSaveRequestDto;
 import com.chansu.webservice.service.PostsService;
 import lombok.AllArgsConstructor;
 import org.springframework.core.env.Environment;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
 
 import java.util.Arrays;
 
@@ -36,7 +34,7 @@ public class WebRestController {
 
         return postsService.save(dto);
     }
-    
+
     @PutMapping("/posts")
     public Long postsModify(@RequestBody PostsModifyRequestDto dto){
         return postsService.modify(dto);
