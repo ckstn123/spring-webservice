@@ -4,6 +4,11 @@ var main = {
         $('#btn-save').on('click', function () {
             _this.save();
         });
+
+        $('#btn-create').on('click', function () {
+            _this.create();
+        });
+
     },
     save : function () {
         var data = {
@@ -20,6 +25,27 @@ var main = {
             data: JSON.stringify(data)
         }).done(function() {
             alert('글이 등록되었습니다.');
+            location.reload();
+        }).fail(function (error) {
+            alert(error);
+        });
+    },
+
+    create : function () {
+        var data = {
+            uid: $('#user_name').val(),
+            uemail: $('#email').val(),
+            upw: $('#password').val()
+        };
+
+        $.ajax({
+            type: 'POST',
+            url: '/member',
+            dataType: 'json',
+            contentType:'application/json; charset=utf-8',
+            data: JSON.stringify(data)
+        }).done(function() {
+            alert('가입되었습니다.');
             location.reload();
         }).fail(function (error) {
             alert(error);

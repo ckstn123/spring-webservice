@@ -1,9 +1,15 @@
+
 <!DOCTYPE HTML>
-<html>
+<html xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <title>스프링부트 웹서비스</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- csrf 토큰 -->
+    <meta id="_csrf" name="_csrf" content="${_csrf.token}" />
+    <meta id="_csrf_header" name="_csrf_header" content="${_csrf.headerName}" />
+
 
     <!--부트스트랩 css 추가-->
     <link rel="stylesheet" href="/css/lib/bootstrap.min.css">
@@ -11,7 +17,23 @@
 <body>
     <h1>스프링부트로 시작하는 웹 서비스 ver.5</h1>
     <div class="col-md-12">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">글 등록</button>
+           <!--로그인 기능 영역-->
+           <div class="row">
+               <div class="col-md-6">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">글 등록</button>
+
+                    <button type="button" sec:authorize="!isAuthenticated()" class="btn btn-success active" data-toggle="modal" data-target="#signUpModal">회원가입</button>
+
+                    {{#userName}}
+                        <button class="btn btn-outline-danger my-2 my-sm-0 btn-sm" type="submit">Logout</button>
+                    {{/userName}}
+                    <a href="/login" class="btn btn-outline-info my-2 my-sm-0 btn-sm">Login</a>
+                </div>
+            </div>
+    </div>
+
+    <div class="col-md-12">
+
         <br/>
         <br/>
         <!-- 목록 출력 영역 -->
@@ -71,6 +93,48 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal 영역 -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signUpLabel">회원가입</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <form>
+                          <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <label for="user_name">Username</label>
+                              <input id="user_name" name="uid" type="text" class="validate"/>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <label for="email">Email</label>
+                              <input id="email" name="uemail" type="email" class="validate"/>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <label for="password">Password</label>
+                              <input id="password" name="upw" type="password" class="validate"/>
+                            </div>
+                          </div>
+                        </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary" id="btn-create">가입하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!--부트스트랩 js, jquery 추가-->
     <script src="/js/lib/jquery.min.js"></script>

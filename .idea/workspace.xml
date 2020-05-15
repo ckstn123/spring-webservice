@@ -2,14 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f46308f5-5593-4af8-a8fe-793f23506b9c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/domain/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/domain/security/login/CustomLoginSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/domain/security/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/domain/security/member/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/domain/security/member/MemberRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/dto/member/MemberMainResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/dto/member/MemberSaveRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/service/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/chansu/webservice/domain/member/MemberRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/domain/BaseTimeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/domain/BaseTimeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/web/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/web/WebController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/web/WebRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/web/WebRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/post.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/post.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +130,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -214,13 +232,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.[set1] SpringWebserviceApplication ">
-    <configuration name="PostServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Spring Boot.SpringWebserviceApplication">
+    <configuration name="MemberRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.chansu.webservice.service.PostServiceTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.chansu.webservice.domain.members.MemberRepositoryTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -230,17 +248,17 @@
             <option value=":test" />
           </list>
         </option>
-        <option name="vmOptions" />
+        <option name="vmOptions" value="" />
       </ExternalSystemSettings>
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PostsRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PostServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.chansu.webservice.domain.posts.PostsRepositoryTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.chansu.webservice.service.PostServiceTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -275,45 +293,35 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WebControllerTest.메인페이지_로딩" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.chansu.webservice.web.WebControllerTest.메인페이지_로딩&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="MemberRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-webservice.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chansu.webservice.domain.member.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chansu.webservice.domain.member" />
+      <option name="MAIN_CLASS_NAME" value="com.chansu.webservice.domain.member.MemberRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="WebRestControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.chansu.webservice.web.WebRestControllerTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="PostsRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-webservice.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chansu.webservice.domain.posts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chansu.webservice.domain.posts" />
+      <option name="MAIN_CLASS_NAME" value="com.chansu.webservice.domain.posts.PostsRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="SpringWebserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-webservice.main" />
@@ -333,21 +341,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.WebControllerTest.메인페이지_로딩" />
       <item itemvalue="Gradle.PostServiceTest" />
-      <item itemvalue="Gradle.PostsRepositoryTest" />
       <item itemvalue="Gradle.WebControllerTest" />
-      <item itemvalue="Gradle.WebRestControllerTest" />
+      <item itemvalue="Gradle.MemberRepositoryTest" />
+      <item itemvalue="JUnit.PostsRepositoryTest" />
+      <item itemvalue="JUnit.MemberRepositoryTest" />
       <item itemvalue="Spring Boot.SpringWebserviceApplication" />
       <item itemvalue="Spring Boot.[set1] SpringWebserviceApplication " />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PostsRepositoryTest" />
-        <item itemvalue="Gradle.WebRestControllerTest" />
+        <item itemvalue="JUnit.MemberRepositoryTest" />
+        <item itemvalue="Gradle.MemberRepositoryTest" />
         <item itemvalue="Gradle.WebControllerTest" />
+        <item itemvalue="JUnit.PostsRepositoryTest" />
         <item itemvalue="Gradle.PostServiceTest" />
-        <item itemvalue="Gradle.WebControllerTest.메인페이지_로딩" />
       </list>
     </recent_temporary>
   </component>
@@ -355,17 +363,12 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.14569536" />
+          <option name="contentProportion" value="0.026946107" />
           <treeState>
             <expand>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -422,7 +425,23 @@
       <workItem from="1583300395179" duration="3839000" />
       <workItem from="1583381465755" duration="37000" />
       <workItem from="1583397741085" duration="3510000" />
-      <workItem from="1583468109264" duration="17107000" />
+      <workItem from="1583468109264" duration="21575000" />
+      <workItem from="1583556557349" duration="29000" />
+      <workItem from="1583573750985" duration="1396000" />
+      <workItem from="1583725151696" duration="38000" />
+      <workItem from="1583762665472" duration="7877000" />
+      <workItem from="1583810784726" duration="10606000" />
+      <workItem from="1583897646030" duration="370000" />
+      <workItem from="1583910572035" duration="9681000" />
+      <workItem from="1583938896025" duration="8656000" />
+      <workItem from="1583985423351" duration="7792000" />
+      <workItem from="1584008442819" duration="330000" />
+      <workItem from="1586701655149" duration="977000" />
+      <workItem from="1586757864862" duration="1884000" />
+      <workItem from="1586925411687" duration="609000" />
+      <workItem from="1587526109336" duration="252000" />
+      <workItem from="1587708049957" duration="1358000" />
+      <workItem from="1589448000342" duration="11665000" />
     </task>
     <servers />
   </component>
@@ -433,18 +452,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="0" key="#Assign_Data_Sources" timestamp="1583128745998">
+    <state x="233" y="0" key="#Assign_Data_Sources" timestamp="1583911336747">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="0" key="#Assign_Data_Sources/0.0.1280.680@0.0.1280.680" timestamp="1583128745998" />
+    <state x="233" y="0" key="#Assign_Data_Sources/0.0.1280.680@0.0.1280.680" timestamp="1583911336747" />
     <state x="233" y="0" key="#Deployment" timestamp="1583232115719">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#Deployment/0.0.1280.680@0.0.1280.680" timestamp="1583232115719" />
-    <state x="233" y="0" key="#Inspections" timestamp="1583150337652">
+    <state x="233" y="0" key="#Inspections" timestamp="1583811302961">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="0" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1583150337652" />
+    <state x="233" y="0" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1583811302961" />
     <state x="466" y="0" key="#Intentions" timestamp="1583130535449">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -461,78 +480,58 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="290" y="0" width="714" height="680" key="#SpringWebserviceApplication/0.0.1280.680@0.0.1280.680" timestamp="1582790788980" />
-    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583230236328">
+    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583818585043">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1583230236328" />
-    <state x="672" y="176" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1579167842054">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="672" y="176" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1280.680@0.0.1280.680" timestamp="1579167842054" />
+    <state x="191" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1583818585043" />
     <state x="516" y="45" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1583129659437">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="516" y="45" key="#com.intellij.ide.macro.MacrosDialog/0.0.1280.680@0.0.1280.680" timestamp="1583129659437" />
-    <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1583128501184">
+    <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1583915190666">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1583128501184" />
-    <state x="334" y="259" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1579067012701">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="334" y="259" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1579067012701" />
-    <state x="671" y="202" width="609" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1579172049836">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="671" y="202" width="609" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1579172049836" />
-    <state x="438" y="198" key="#com.intellij.ws.actions.HttpClientConvertFromCurlDialog" timestamp="1579079507519">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="438" y="198" key="#com.intellij.ws.actions.HttpClientConvertFromCurlDialog/0.0.1280.680@0.0.1280.680" timestamp="1579079507519" />
+    <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1583915190666" />
     <state x="674" y="95" key="FileChooserDialogImpl" timestamp="1583216153707">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="674" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583216153707" />
-    <state width="1031" height="90" key="GridCell.Tab.0.bottom" timestamp="1583486367336">
+    <state width="729" height="100" key="GridCell.Tab.0.bottom" timestamp="1589459986870">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1031" height="90" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583486367336" />
-    <state width="1031" height="90" key="GridCell.Tab.0.center" timestamp="1583486367336">
+    <state width="729" height="100" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589459986870" />
+    <state width="729" height="100" key="GridCell.Tab.0.center" timestamp="1589459986870">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1031" height="90" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583486367336" />
-    <state width="1031" height="90" key="GridCell.Tab.0.left" timestamp="1583486367336">
+    <state width="729" height="100" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589459986870" />
+    <state width="729" height="100" key="GridCell.Tab.0.left" timestamp="1589459986870">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1031" height="90" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583486367336" />
-    <state width="1031" height="90" key="GridCell.Tab.0.right" timestamp="1583486367336">
+    <state width="729" height="100" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589459986870" />
+    <state width="729" height="100" key="GridCell.Tab.0.right" timestamp="1589459986870">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1031" height="90" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583486367336" />
-    <state width="1031" height="90" key="GridCell.Tab.1.bottom" timestamp="1583486367337">
+    <state width="729" height="100" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589459986870" />
+    <state width="729" height="100" key="GridCell.Tab.1.bottom" timestamp="1589459986870">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1031" height="90" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583486367337" />
-    <state width="1031" height="90" key="GridCell.Tab.1.center" timestamp="1583486367337">
+    <state width="729" height="100" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589459986870" />
+    <state width="729" height="100" key="GridCell.Tab.1.center" timestamp="1589459986870">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1031" height="90" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583486367337" />
-    <state width="1031" height="90" key="GridCell.Tab.1.left" timestamp="1583486367337">
+    <state width="729" height="100" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1589459986870" />
+    <state width="729" height="100" key="GridCell.Tab.1.left" timestamp="1589459986870">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1031" height="90" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583486367337" />
-    <state width="1031" height="90" key="GridCell.Tab.1.right" timestamp="1583486367337">
+    <state width="729" height="100" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1589459986870" />
+    <state width="729" height="100" key="GridCell.Tab.1.right" timestamp="1589459986870">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1031" height="90" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583486367337" />
-    <state x="197" y="0" key="SettingsEditor" timestamp="1583224258601">
+    <state width="729" height="100" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1589459986870" />
+    <state x="197" y="0" key="SettingsEditor" timestamp="1583769796388">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="197" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1583224258601" />
-    <state x="755" y="121" key="chooseDestDirectoryDialog" timestamp="1579162196418">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="755" y="121" key="chooseDestDirectoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1579162196418" />
+    <state x="197" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1583769796388" />
     <state x="710" y="58" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583128805790">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -545,9 +544,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1583220292763" />
-    <state x="337" y="69" width="672" height="678" key="search.everywhere.popup" timestamp="1583232109976">
+    <state x="337" y="69" width="672" height="678" key="search.everywhere.popup" timestamp="1583818571548">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="69" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1583232109976" />
+    <state x="337" y="69" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1583818571548" />
   </component>
 </project>
