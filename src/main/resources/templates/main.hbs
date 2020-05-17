@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
@@ -19,7 +18,7 @@
     <div class="col-md-12">
            <!--로그인 기능 영역-->
            <div class="row">
-               <div class="col-md-6">
+               <div class="col-md-4">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">글 등록</button>
 
                     <button type="button" class="btn btn-success active" data-toggle="modal" data-target="#signUpModal">회원가입</button>
@@ -32,6 +31,17 @@
                         <a href="/login" class="btn btn-outline-info my-2 my-sm-0 btn-sm">Login</a>
                     {{/unless}}
                 </div>
+
+                <!-- 검색 form -->
+               <form action="/search" class="form-inline" method="GET">
+                    <div class="form-group">
+                        <input name="keyword" class="form-control" type="text" placeholder="검색어를 입력해주세요">
+                    </div>
+                    <div class="form-group">
+                         <button type="submit" class="btn btn-primary">Search</button>
+                    </div>
+
+               </form>
             </div>
     </div>
 
@@ -39,6 +49,7 @@
 
         <br/>
         <br/>
+
         <!-- 목록 출력 영역 -->
         <table class="table table-horizontal table-bordered">
             <thead class="thead-strong">
@@ -63,6 +74,13 @@
         </table>
     </div>
 
+    <footer>
+        <div class="col-md-offset-4 col-md-4">
+            {{#each pageList}}
+                <a href="/?page={{this}}">{{this}}</a>
+            {{/each}}
+        </div>
+    </footer>
 
     <!-- Modal 영역 -->
     <div class="modal fade" id="savePostsModal" tabindex="-1" role="dialog" aria-labelledby="savePostsLabel" aria-hidden="true">
@@ -138,17 +156,6 @@
             </div>
         </div>
     </div>
-
-    <footer>
-        <!-- 검색 form -->
-        <form action="/search" method="GET">
-            <div class="col-md-6">
-                <input name="keyword" class="form-control" type="text" placeholder="검색어를 입력해주세요">
-            </div>
-
-            <button class="btn btn-primary">검색하기</button>
-        </form>
-    </footer>
 
     <!--부트스트랩 js, jquery 추가-->
     <script src="/js/lib/jquery.min.js"></script>

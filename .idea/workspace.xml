@@ -10,13 +10,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/domain/posts/PostsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/domain/posts/PostsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/domain/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/domain/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/dto/posts/PostInfoResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/dto/posts/PostInfoResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/dto/posts/PostsSaveRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/dto/posts/PostsSaveRequestDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/service/PostsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/service/PostsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/web/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/web/WebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/web/WebRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/web/WebRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -432,7 +427,7 @@
       <workItem from="1587708049957" duration="1358000" />
       <workItem from="1589448000342" duration="11665000" />
       <workItem from="1589528039836" duration="13270000" />
-      <workItem from="1589705035357" duration="5188000" />
+      <workItem from="1589705035357" duration="11569000" />
     </task>
     <servers />
   </component>
@@ -487,38 +482,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="674" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583216153707" />
-    <state width="798" height="202" key="GridCell.Tab.0.bottom" timestamp="1589710315348">
+    <state width="798" height="202" key="GridCell.Tab.0.bottom" timestamp="1589716760378">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="798" height="202" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589710315348" />
-    <state width="798" height="202" key="GridCell.Tab.0.center" timestamp="1589710315347">
+    <state width="798" height="202" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589716760378" />
+    <state width="798" height="202" key="GridCell.Tab.0.center" timestamp="1589716760378">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="798" height="202" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589710315347" />
-    <state width="798" height="202" key="GridCell.Tab.0.left" timestamp="1589710315347">
+    <state width="798" height="202" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589716760378" />
+    <state width="798" height="202" key="GridCell.Tab.0.left" timestamp="1589716760378">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="798" height="202" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589710315347" />
-    <state width="798" height="202" key="GridCell.Tab.0.right" timestamp="1589710315348">
+    <state width="798" height="202" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589716760378" />
+    <state width="798" height="202" key="GridCell.Tab.0.right" timestamp="1589716760378">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="798" height="202" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589710315348" />
-    <state width="798" height="202" key="GridCell.Tab.1.bottom" timestamp="1589710315348">
+    <state width="798" height="202" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589716760378" />
+    <state width="798" height="202" key="GridCell.Tab.1.bottom" timestamp="1589716760378">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="798" height="202" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589710315348" />
-    <state width="798" height="202" key="GridCell.Tab.1.center" timestamp="1589710315348">
+    <state width="798" height="202" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589716760378" />
+    <state width="798" height="202" key="GridCell.Tab.1.center" timestamp="1589716760378">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="798" height="202" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1589710315348" />
-    <state width="798" height="202" key="GridCell.Tab.1.left" timestamp="1589710315348">
+    <state width="798" height="202" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1589716760378" />
+    <state width="798" height="202" key="GridCell.Tab.1.left" timestamp="1589716760378">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="798" height="202" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1589710315348" />
-    <state width="798" height="202" key="GridCell.Tab.1.right" timestamp="1589710315348">
+    <state width="798" height="202" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1589716760378" />
+    <state width="798" height="202" key="GridCell.Tab.1.right" timestamp="1589716760378">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="798" height="202" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1589710315348" />
+    <state width="798" height="202" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1589716760378" />
     <state x="197" y="0" key="SettingsEditor" timestamp="1583769796388">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

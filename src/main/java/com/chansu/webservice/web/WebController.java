@@ -22,8 +22,10 @@ public class WebController {
     private MemberService memberService;
 
     @GetMapping("/")
-    public String main(Model model) {
-        model.addAttribute("posts", postsService.findAllDesc());
+    public String main(Model model, @RequestParam(value="page", defaultValue = "1") Integer pageNum) {
+        //model.addAttribute("posts", postsService.findAllDesc());
+        model.addAttribute("posts", postsService.getPostslist(pageNum));
+        model.addAttribute("pageList", postsService.getPageList(pageNum));
         model.addAttribute("userName", memberService.username);
 
         return "main";
