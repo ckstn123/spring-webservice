@@ -63,6 +63,7 @@
         </table>
     </div>
 
+
     <!-- Modal 영역 -->
     <div class="modal fade" id="savePostsModal" tabindex="-1" role="dialog" aria-labelledby="savePostsLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -138,6 +139,16 @@
         </div>
     </div>
 
+    <footer>
+        <!-- 검색 form -->
+        <form action="/search" method="GET">
+            <div class="col-md-6">
+                <input name="keyword" class="form-control" type="text" placeholder="검색어를 입력해주세요">
+            </div>
+
+            <button class="btn btn-primary">검색하기</button>
+        </form>
+    </footer>
 
     <!--부트스트랩 js, jquery 추가-->
     <script src="/js/lib/jquery.min.js"></script>
@@ -147,4 +158,5 @@
     <script src="/js/app/main.js"></script>
 
 </body>
+
 </html>

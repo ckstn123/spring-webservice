@@ -1,14 +1,17 @@
 package com.chansu.webservice.service;
 
+import com.chansu.webservice.domain.posts.Posts;
 import com.chansu.webservice.dto.posts.PostInfoResponseDto;
 import com.chansu.webservice.dto.posts.PostsModifyRequestDto;
 import com.chansu.webservice.dto.posts.PostsSaveRequestDto;
 import com.chansu.webservice.domain.posts.PostsRepository;
 import com.chansu.webservice.dto.posts.PostsMainResponseDto;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -51,4 +54,19 @@ public class PostsService {
         }
         return id;
     }
+
+    @Transactional
+    public List<PostsMainResponseDto> searchPosts(String keyword) {
+        List<Posts> boardEntities = postsRepository.findByTitleContaining(keyword);
+        List<PostsMainResponseDto> boardDtoList = new ArrayList<>();
+
+        if (boardEntities.isEmpty()) return boardDtoList;
+
+        for (Posts boardEntity : boardEntities) {
+            boardDtoList.add(new PostsMainResponseDto(boardEntity));
+        }
+
+        return boardDtoList;
+    }
+
 }

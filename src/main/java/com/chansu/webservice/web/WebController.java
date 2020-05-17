@@ -1,8 +1,5 @@
 package com.chansu.webservice.web;
 
-import com.chansu.webservice.domain.security.member.Member;
-import com.chansu.webservice.domain.security.member.MemberRepository;
-import com.chansu.webservice.domain.security.member.MemberRole;
 import com.chansu.webservice.service.MemberService;
 import com.chansu.webservice.service.PostsService;
 import lombok.AllArgsConstructor;
@@ -15,8 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-import java.util.Arrays;
+import java.util.List;
 
 @Controller
 @AllArgsConstructor
@@ -44,6 +40,12 @@ public class WebController {
         String referer = req.getHeader("Referer");
         req.getSession().setAttribute("prevPage", referer);
         return "login";
+    }
+
+    @GetMapping("/search")
+    public String search(@RequestParam(value="keyword") String keyword, Model model) {
+        model.addAttribute("posts", postsService.searchPosts(keyword));
+        return "main";
     }
 
 }

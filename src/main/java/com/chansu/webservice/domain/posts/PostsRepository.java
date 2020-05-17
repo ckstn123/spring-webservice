@@ -4,6 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
+import java.util.List;
 import java.util.stream.Stream;
 
 //DAO 역할 DB Layer 접근자
@@ -22,4 +23,5 @@ public interface PostsRepository extends JpaRepository<Posts, Long> {
             "WHERE p.id = ?4")
     void modify(String title, String author, String content, Long id);
 
+    List<Posts> findByTitleContaining(String keyword);
 }
