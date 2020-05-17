@@ -22,12 +22,15 @@
                <div class="col-md-6">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">글 등록</button>
 
-                    <button type="button" sec:authorize="!isAuthenticated()" class="btn btn-success active" data-toggle="modal" data-target="#signUpModal">회원가입</button>
+                    <button type="button" class="btn btn-success active" data-toggle="modal" data-target="#signUpModal">회원가입</button>
 
-                    {{#userName}}
+                    {{#if userName}}
                         <button class="btn btn-outline-danger my-2 my-sm-0 btn-sm" type="submit">Logout</button>
-                    {{/userName}}
-                    <a href="/login" class="btn btn-outline-info my-2 my-sm-0 btn-sm">Login</a>
+                    {{/if}}
+
+                    {{#unless userName}}
+                        <a href="/login" class="btn btn-outline-info my-2 my-sm-0 btn-sm">Login</a>
+                    {{/unless}}
                 </div>
             </div>
     </div>

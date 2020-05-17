@@ -24,11 +24,12 @@ public class WebController {
 
     private PostsService postsService;
     private MemberService memberService;
-    private final HttpSession httpSession;
+
     @GetMapping("/")
     public String main(Model model) {
         model.addAttribute("posts", postsService.findAllDesc());
-        Member user = (Member) httpSession.getAttribute("uid");
+        model.addAttribute("userName", memberService.username);
+
         return "main";
     }
 
@@ -39,10 +40,9 @@ public class WebController {
     }
 
     @GetMapping("/login")
-    public String loginForm(HttpServletRequest req, Model model) {
+    public String loginForm(HttpServletRequest req) {
         String referer = req.getHeader("Referer");
         req.getSession().setAttribute("prevPage", referer);
-
         return "login";
     }
 

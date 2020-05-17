@@ -5,6 +5,8 @@ import com.chansu.webservice.domain.security.member.MemberRepository;
 import com.chansu.webservice.domain.security.member.MemberRole;
 import com.chansu.webservice.dto.member.MemberSaveRequestDto;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import lombok.Value;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -19,10 +21,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Service
 public class MemberService implements UserDetailsService {
-    MemberRepository memberRepository;
+    private final MemberRepository memberRepository;
+
+    public String username;
 
     @Transactional
     public Long create(MemberSaveRequestDto dto) {
@@ -47,7 +51,8 @@ public class MemberService implements UserDetailsService {
         } else {
             authorities.add(new SimpleGrantedAuthority(MemberRole.MEMBER.getValue()));
         }
-
+        username = uid;
+        System.out.println(username);
         return new User(userEntity.getUid(), userEntity.getUpw(), authorities);
     }
 }
