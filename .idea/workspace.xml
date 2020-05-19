@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f46308f5-5593-4af8-a8fe-793f23506b9c" name="Default Changelist" comment="" />
+    <list default="true" id="f46308f5-5593-4af8-a8fe-793f23506b9c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/dto/posts/PostInfoResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/dto/posts/PostInfoResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/dto/posts/PostsSaveRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chansu/webservice/dto/posts/PostsSaveRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/chansu/webservice/domain/member/MemberRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/chansu/webservice/domain/member/MemberRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/chansu/webservice/service/PostServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/chansu/webservice/service/PostServiceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -204,7 +218,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringWebserviceApplication">
+  <component name="RunManager" selected="JUnit.PostServiceTest">
     <configuration name="MemberRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -221,26 +235,6 @@
           </list>
         </option>
         <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="PostServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.chansu.webservice.service.PostServiceTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
       </ExternalSystemSettings>
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
@@ -280,6 +274,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PostServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-webservice.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chansu.webservice.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chansu.webservice.service" />
+      <option name="MAIN_CLASS_NAME" value="com.chansu.webservice.service.PostServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PostsRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-webservice.test" />
       <extension name="coverage">
@@ -313,21 +322,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.PostServiceTest" />
       <item itemvalue="Gradle.WebControllerTest" />
       <item itemvalue="Gradle.MemberRepositoryTest" />
       <item itemvalue="JUnit.PostsRepositoryTest" />
       <item itemvalue="JUnit.MemberRepositoryTest" />
       <item itemvalue="Spring Boot.SpringWebserviceApplication" />
       <item itemvalue="Spring Boot.[set1] SpringWebserviceApplication " />
+      <item itemvalue="JUnit.PostServiceTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PostServiceTest" />
         <item itemvalue="JUnit.MemberRepositoryTest" />
         <item itemvalue="Gradle.MemberRepositoryTest" />
         <item itemvalue="Gradle.WebControllerTest" />
         <item itemvalue="JUnit.PostsRepositoryTest" />
-        <item itemvalue="Gradle.PostServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -341,6 +350,11 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -411,7 +425,7 @@
       <workItem from="1589448000342" duration="11665000" />
       <workItem from="1589528039836" duration="13270000" />
       <workItem from="1589705035357" duration="11569000" />
-      <workItem from="1589901304680" duration="283000" />
+      <workItem from="1589901304680" duration="1828000" />
     </task>
     <servers />
   </component>
@@ -466,38 +480,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="674" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583216153707" />
-    <state width="798" height="202" key="GridCell.Tab.0.bottom" timestamp="1589716760378">
+    <state width="798" height="202" key="GridCell.Tab.0.bottom" timestamp="1589902694686">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="798" height="202" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589716760378" />
-    <state width="798" height="202" key="GridCell.Tab.0.center" timestamp="1589716760378">
+    <state width="798" height="202" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589902694686" />
+    <state width="798" height="202" key="GridCell.Tab.0.center" timestamp="1589902694686">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="798" height="202" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589716760378" />
-    <state width="798" height="202" key="GridCell.Tab.0.left" timestamp="1589716760378">
+    <state width="798" height="202" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589902694686" />
+    <state width="798" height="202" key="GridCell.Tab.0.left" timestamp="1589902694686">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="798" height="202" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589716760378" />
-    <state width="798" height="202" key="GridCell.Tab.0.right" timestamp="1589716760378">
+    <state width="798" height="202" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589902694686" />
+    <state width="798" height="202" key="GridCell.Tab.0.right" timestamp="1589902694686">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="798" height="202" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589716760378" />
-    <state width="798" height="202" key="GridCell.Tab.1.bottom" timestamp="1589716760378">
+    <state width="798" height="202" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589902694686" />
+    <state width="798" height="202" key="GridCell.Tab.1.bottom" timestamp="1589902694686">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="798" height="202" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589716760378" />
-    <state width="798" height="202" key="GridCell.Tab.1.center" timestamp="1589716760378">
+    <state width="798" height="202" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589902694686" />
+    <state width="798" height="202" key="GridCell.Tab.1.center" timestamp="1589902694686">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="798" height="202" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1589716760378" />
-    <state width="798" height="202" key="GridCell.Tab.1.left" timestamp="1589716760378">
+    <state width="798" height="202" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1589902694686" />
+    <state width="798" height="202" key="GridCell.Tab.1.left" timestamp="1589902694686">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="798" height="202" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1589716760378" />
-    <state width="798" height="202" key="GridCell.Tab.1.right" timestamp="1589716760378">
+    <state width="798" height="202" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1589902694686" />
+    <state width="798" height="202" key="GridCell.Tab.1.right" timestamp="1589902694686">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="798" height="202" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1589716760378" />
+    <state width="798" height="202" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1589902694686" />
     <state x="197" y="0" key="SettingsEditor" timestamp="1583769796388">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

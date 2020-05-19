@@ -10,13 +10,13 @@ public class PostInfoResponseDto {
     private String content;
     private String author;
 
+    @Builder
     public PostInfoResponseDto(Posts entity){
         title = entity.getTitle();
         author = entity.getAuthor();
         content = entity.getContent();
     }
 
-    @Builder
     public Posts toEntity(){
         return Posts.builder()
                 .title(title)
