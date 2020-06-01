@@ -23,13 +23,14 @@
 
                     <button type="button" class="btn btn-success active" data-toggle="modal" data-target="#signUpModal">회원가입</button>
 
-                    {{#if userName}}
+                    {{#authorize "isAuthenticated()"}}
                         <button class="btn btn-outline-danger my-2 my-sm-0 btn-sm" type="submit">Logout</button>
-                    {{/if}}
+                    {{/authorize}}
 
-                    {{#unless userName}}
+                    {{#authorize "isAnonymous()"}}
                         <a href="/login" class="btn btn-outline-info my-2 my-sm-0 btn-sm">Login</a>
-                    {{/unless}}
+                    {{/authorize}}
+
                 </div>
 
                 <!-- 검색 form -->
