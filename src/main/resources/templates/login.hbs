@@ -25,10 +25,10 @@
         </div>
 
         <!-- Login Form -->
-        <form>
+        <form method = "POST">
           <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
-          <input type="text" id="login" class="fadeIn second" name="login" placeholder="Id">
-          <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password">
+          <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username">
+          <input type="text" id="login" class="fadeIn third" name="password" placeholder="Password">
           <input type="submit" class="fadeIn fourth" value="Log In">
         </form>
 
