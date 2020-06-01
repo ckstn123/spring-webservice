@@ -10,8 +10,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import java.security.Principal;
 import java.util.List;
 
 @Controller
@@ -42,6 +44,10 @@ public class WebController {
         req.getSession().setAttribute("prevPage", referer);
         return "login";
     }
+    @GetMapping("/logout")
+    public String dispLogout() {
+        return "main";
+    }
 
     @GetMapping("/search")
     public String search(@RequestParam(value="keyword") String keyword, Model model) {
@@ -49,4 +55,11 @@ public class WebController {
         return "main";
     }
 
+    @GetMapping("/username")
+    @ResponseBody
+    public String currentUserName(Model model, Principal principal) {
+        model.addAttribute("username", principal.getName());
+        System.out.println(123);
+        return "main";
+    }
 }

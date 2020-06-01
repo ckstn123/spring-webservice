@@ -10,12 +10,12 @@ var login = {
 
     getUsername : function () {
         var data = {
-            userName: $('#user_name').val(),
+            userName: $('#user_name').val()
         };
 
         $.ajax({
-            type: 'POST',
-            url: '/login',
+            type: 'GET',
+            url: '/username',
             dataType: 'json',
             contentType:'application/json; charset=utf-8',
             data: JSON.stringify(data)
