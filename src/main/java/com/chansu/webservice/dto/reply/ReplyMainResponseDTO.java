@@ -9,17 +9,17 @@ import java.util.Optional;
 
 @Getter
 public class ReplyMainResponseDTO {
-    private Long reply_no;
-    private Long post_no;
-    private String reply_content;
-    private String reply_writer;
+    private Long replyNo;
+    private Long postNo;
+    private String replyContent;
+    private String replyWriter;
     private String modifiedDate;
 
     public ReplyMainResponseDTO(Reply entity){
-        reply_no = entity.getReply_no();
-        post_no = entity.getPost_no();
-        reply_content = entity.getReply_content();
-        reply_writer = entity.getReply_writer();
+        replyNo = entity.getReplyNo();
+        postNo = entity.getPostNo();
+        replyContent = entity.getReplyContent();
+        replyWriter = entity.getReplyWriter();
         modifiedDate = toStringDateTime(entity.getModifiedDate());
     }
 

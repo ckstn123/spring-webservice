@@ -15,18 +15,18 @@ public class Reply extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long reply_no;
+    private Long replyNo;
 
-    private Long post_no;
+    private Long postNo;
 
     @Column(columnDefinition = "TEXT", nullable = false)
-    private String reply_content;
+    private String replyContent;
 
-    private String reply_writer;
+    private String replyWriter;
 
     @Builder
-    public Reply(String reply_content, String reply_writer){
-        this.reply_content = reply_content;
-        this.reply_writer = reply_writer;
+    public Reply(String replyContent, String replyWriter){
+        this.replyContent = replyContent;
+        this.replyWriter = replyWriter;
     }
 }

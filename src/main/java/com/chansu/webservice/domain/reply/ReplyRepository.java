@@ -7,11 +7,11 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface ReplyRepository extends JpaRepository<Reply, Long> {
-    List<Reply> findByPost_no(Long post_no);
+    List<Reply> findByPostNo(Long postNo);
 
     @Modifying
     @Query("UPDATE Reply p " +
-            "SET p.reply_content = ?1 " +
-            "WHERE p.reply_no = ?2")
-    void modify(String reply_content, Long reply_no);
+            "SET p.replyContent = ?1 " +
+            "WHERE p.replyNo = ?2")
+    void modify(String replyContent, Long replyNo);
 }

@@ -22,6 +22,6 @@ public interface PostsRepository extends JpaRepository<Posts, Long> {
             "p.content = ?3 " +
             "WHERE p.id = ?4")
     void modify(String title, String author, String content, Long id);
-
+    
     List<Posts> findByTitleContaining(String keyword);
 }
