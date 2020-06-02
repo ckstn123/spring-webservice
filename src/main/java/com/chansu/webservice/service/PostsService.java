@@ -51,7 +51,7 @@ public class PostsService {
     }
 
     public Integer[] getPageList(Integer curPageNum) {
-        Integer[] pageList = new Integer[BLOCK_PAGE_NUM_COUNT];
+        ArrayList<Integer> temp = new ArrayList<>();
 
         // 총 게시글 갯수
         Double postsTotalCount = Double.valueOf(this.getPostsCount());
@@ -69,10 +69,13 @@ public class PostsService {
 
         // 페이지 번호 할당
         for (int pageNum = curPageNum, idx = 0; pageNum <= blockLastPageNum; pageNum++, idx++) {
-            pageList[idx] = pageNum;
+            temp.add(pageNum);
             System.out.println(pageNum);
         }
-
+        Integer[] pageList = new Integer[temp.size()];
+        for(int idx = 0; idx < pageList.length; idx++){
+            pageList[idx] = temp.get(idx);
+        }
         return pageList;
     }
 

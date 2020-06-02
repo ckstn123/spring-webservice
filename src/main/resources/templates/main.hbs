@@ -76,13 +76,13 @@
         </table>
     </div>
 
-    <footer>
-        <div class="col-md-offset-4 col-md-4">
+    <div class="container">
+        <ul class="pagination justify-content-center">
             {{#each pageList}}
-                <a href="/?page={{this}}">{{this}}</a>
+                <li class="page-item"><a class="page-link" href="/?page={{this}}">{{this}}</a></li>
             {{/each}}
-        </div>
-    </footer>
+         </ul>
+    </div>
 
     <!-- Modal 영역 -->
     <div class="modal fade" id="savePostsModal" tabindex="-1" role="dialog" aria-labelledby="savePostsLabel" aria-hidden="true">
