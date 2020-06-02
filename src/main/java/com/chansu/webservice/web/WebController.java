@@ -45,7 +45,7 @@ public class WebController {
         return "login";
     }
     @GetMapping("/logout")
-    public String dispLogout() {
+    public String disLogout() {
         return "main";
     }
 

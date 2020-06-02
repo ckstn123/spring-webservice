@@ -13,5 +13,5 @@ public interface ReplyRepository extends JpaRepository<Reply, Long> {
     @Query("UPDATE Reply p " +
             "SET p.replyContent = ?1 " +
             "WHERE p.replyNo = ?2")
-    void modify(String replyContent, Long replyNo);
+    void modify(String replyContent, String replyWriter, Long replyNo);
 }
