@@ -20,7 +20,7 @@ import java.util.List;
 public class ReplyService {
     ReplyRepository replyRepository;
 
-    @Transactional
+    @Transactional(readOnly = true)
     public List<ReplyMainResponseDTO> getReplylist(Long postNo){
         List<Reply> list = replyRepository.findByPostNo(postNo);
         List<ReplyMainResponseDTO> replyDtoList = new ArrayList<>();
