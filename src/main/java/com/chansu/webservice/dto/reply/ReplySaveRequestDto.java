@@ -1,6 +1,5 @@
 package com.chansu.webservice.dto.reply;
 
-import com.chansu.webservice.domain.posts.Posts;
 import com.chansu.webservice.domain.reply.Reply;
 import lombok.Builder;
 import lombok.Getter;
@@ -11,18 +10,20 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class ReplySaveRequestDto {
-
+    private Long postNo;
     private String replyContent;
     private String replyWriter;
 
     @Builder
-    ReplySaveRequestDto(String replyContent, String replyWriter){
+    ReplySaveRequestDto(Long postNo, String replyContent, String replyWriter){
+        this.postNo = postNo;
         this.replyContent = replyContent;
         this.replyWriter = replyWriter;
     }
 
     public Reply toEntity(){
         return Reply.builder()
+                .postNo(postNo)
                 .replyContent(replyContent)
                 .replyWriter(replyWriter)
                 .build();
