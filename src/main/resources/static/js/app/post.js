@@ -11,6 +11,9 @@ var post = {
         $('#btn-delete').on('click', function(){
             _this.delete();
         });
+        $('#btn-replyAdd').on('click', function(){
+            _this.replyAdd();
+        });
     },
     list : function() {
         window.location.href = '/';
@@ -56,6 +59,32 @@ var post = {
                 alert(error);
             });
         }
+    },
+
+    replyAdd : function () {
+        // 화면으로부터 입력 받은 변수값의 처리
+        var data = {
+            postNo : $("#postNo").val(),
+            replyContent : $("#replyContent").val(),
+            replyWriter : $("#replyWriter").val()
+        };
+
+        // AJAX 통신 : POST
+        $.ajax({
+            type : "post",
+            url : "/replies",
+            dataType: 'json',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify(data)
+        }).done(function () {
+            // 성공적인 댓글 등록 처리 알림
+            alert("댓글 등록 완료!");
+            location.reload();
+            data.replyContent.val(""); // 댓글 내용 초기화
+            data.replyWriter.val(""); // 댓글 작성자 초기화
+        }).fail(function (error) {
+            alert(error);
+        });
     }
 };
 post.init();
