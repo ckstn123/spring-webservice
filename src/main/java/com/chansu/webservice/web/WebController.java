@@ -2,6 +2,7 @@ package com.chansu.webservice.web;
 
 import com.chansu.webservice.service.MemberService;
 import com.chansu.webservice.service.PostsService;
+import com.chansu.webservice.service.ReplyService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,13 +12,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
-import java.security.Principal;
 
 @Controller
 @AllArgsConstructor
 public class WebController {
 
     private PostsService postsService;
+    private ReplyService replyService;
     private MemberService memberService;
 
     @GetMapping("/")
@@ -32,6 +33,7 @@ public class WebController {
     @GetMapping("/posts")
     public String posts(@RequestParam(name="id", defaultValue="0") Long id, Model model){
         model.addAttribute("post", postsService.findPosts(id));
+        model.addAttribute("replies", replyService.getReplylist(id));
         return "post";
     }
 
@@ -51,5 +53,5 @@ public class WebController {
         model.addAttribute("posts", postsService.searchPosts(keyword));
         return "main";
     }
-    
+
 }

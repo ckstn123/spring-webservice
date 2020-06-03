@@ -3,8 +3,11 @@ package com.chansu.webservice.web;
 import com.chansu.webservice.dto.member.MemberSaveRequestDto;
 import com.chansu.webservice.dto.posts.PostsModifyRequestDto;
 import com.chansu.webservice.dto.posts.PostsSaveRequestDto;
+import com.chansu.webservice.dto.reply.ReplyModifyRequestDto;
+import com.chansu.webservice.dto.reply.ReplySaveRequestDto;
 import com.chansu.webservice.service.MemberService;
 import com.chansu.webservice.service.PostsService;
+import com.chansu.webservice.service.ReplyService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -19,6 +22,7 @@ public class WebRestController {
     private PostsService postsService;
     private Environment env;
     private MemberService memberService;
+    private ReplyService replyService;
 
     @GetMapping("/hello")
     public String hello() {
@@ -54,5 +58,22 @@ public class WebRestController {
         return memberService.create(dto);
     }
 
+    @PostMapping("/replies")
+    public Long saveReply(@RequestBody ReplySaveRequestDto dto){
+
+        return replyService.save(dto);
+    }
+
+    @PutMapping("/replies")
+    public Long replyModify(@RequestBody ReplyModifyRequestDto dto){
+
+        return replyService.modify(dto);
+    }
+
+    @DeleteMapping("/replies")
+    public Long replyDelete(@RequestBody Long id){
+
+        return replyService.delete(id);
+    }
 
 }

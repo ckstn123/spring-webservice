@@ -19,10 +19,15 @@ import java.util.List;
 @Service
 public class ReplyService {
     ReplyRepository replyRepository;
+
     @Transactional
-    List<ReplyMainResponseDTO> getReplylist(Long postNo){
+    public List<ReplyMainResponseDTO> getReplylist(Long postNo){
         List<Reply> list = replyRepository.findByPostNo(postNo);
         List<ReplyMainResponseDTO> replyDtoList = new ArrayList<>();
+        if(list.isEmpty()){
+            return replyDtoList;
+        }
+
         for(Reply reply : list){
             replyDtoList.add(new ReplyMainResponseDTO(reply));
         }
