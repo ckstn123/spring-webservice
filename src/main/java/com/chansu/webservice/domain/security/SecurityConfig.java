@@ -43,14 +43,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .antMatchers("/posts").hasRole("MEMBER")
                     .antMatchers("/", "/posts", "/login", "/replies").permitAll()
                 .and()
-                .headers()
-                .addHeaderWriter(
-                        new XFrameOptionsHeaderWriter(
-                                new WhiteListedAllowFromStrategy(Arrays.asList("localhost"))
-                        )
-                )
-                .frameOptions().sameOrigin()
-                .and()
                 .formLogin()
                     .loginPage("/login")
                     .loginProcessingUrl("/login")
