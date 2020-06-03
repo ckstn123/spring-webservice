@@ -3,8 +3,6 @@ package com.chansu.webservice.web;
 import com.chansu.webservice.service.MemberService;
 import com.chansu.webservice.service.PostsService;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +12,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import java.security.Principal;
-import java.util.List;
 
 @Controller
 @AllArgsConstructor
@@ -54,12 +51,5 @@ public class WebController {
         model.addAttribute("posts", postsService.searchPosts(keyword));
         return "main";
     }
-
-    @GetMapping("/username")
-    @ResponseBody
-    public String currentUserName(Model model, Principal principal) {
-        model.addAttribute("username", principal.getName());
-        System.out.println(123);
-        return "main";
-    }
+    
 }

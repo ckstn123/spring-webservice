@@ -1,9 +1,5 @@
 package com.chansu.webservice.web;
 
-import com.chansu.webservice.domain.security.member.Member;
-import com.chansu.webservice.domain.security.member.MemberRepository;
-import com.chansu.webservice.domain.security.member.MemberRole;
-import com.chansu.webservice.dto.member.MemberMainResponseDto;
 import com.chansu.webservice.dto.member.MemberSaveRequestDto;
 import com.chansu.webservice.dto.posts.PostsModifyRequestDto;
 import com.chansu.webservice.dto.posts.PostsSaveRequestDto;
@@ -12,11 +8,8 @@ import com.chansu.webservice.service.PostsService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.util.Arrays;
 
 @RestController
