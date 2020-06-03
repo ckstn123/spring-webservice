@@ -25,7 +25,8 @@ public class Reply extends BaseTimeEntity {
     private String replyWriter;
 
     @Builder
-    public Reply(String replyContent, String replyWriter){
+    public Reply(Long postNo, String replyContent, String replyWriter){
+        this.postNo = postNo;
         this.replyContent = replyContent;
         this.replyWriter = replyWriter;
     }
