@@ -64,9 +64,9 @@ var post = {
     replyAdd : function () {
         // 화면으로부터 입력 받은 변수값의 처리
         var data = {
-            postNo : $("#postNo").val(),
-            replyContent : $("#replyContent").val(),
-            replyWriter : $("#replyWriter").val()
+            postNo : $('#postNo').val(),
+            replyContent : $('#replyContent').val(),
+            replyWriter : $('#replyWriter').val()
         };
 
         // AJAX 통신 : POST
