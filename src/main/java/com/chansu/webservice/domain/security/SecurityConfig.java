@@ -14,6 +14,10 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+import org.springframework.security.web.header.writers.frameoptions.WhiteListedAllowFromStrategy;
+import org.springframework.security.web.header.writers.frameoptions.XFrameOptionsHeaderWriter;
+
+import java.util.Arrays;
 
 @Configuration
 @EnableWebSecurity
@@ -34,9 +38,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf()
                     .disable()
                 .authorizeRequests()
+                    .antMatchers("/h2-console/**").permitAll()
                     .antMatchers("/posts").hasRole("ADMIN")
                     .antMatchers("/posts").hasRole("MEMBER")
-                    .antMatchers("/", "/posts", "/login").permitAll()
+                    .antMatchers("/", "/posts", "/login", "/replies").permitAll()
+                .and()
+                .headers()
+                .addHeaderWriter(
+                        new XFrameOptionsHeaderWriter(
+                                new WhiteListedAllowFromStrategy(Arrays.asList("localhost"))
+                        )
+                )
+                .frameOptions().sameOrigin()
                 .and()
                 .formLogin()
                     .loginPage("/login")
