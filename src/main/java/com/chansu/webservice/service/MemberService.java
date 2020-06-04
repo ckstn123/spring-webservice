@@ -26,8 +26,6 @@ import java.util.Optional;
 public class MemberService implements UserDetailsService {
     private final MemberRepository memberRepository;
 
-    public String username;
-
     @Transactional
     public Long create(MemberSaveRequestDto dto) {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
@@ -51,8 +49,7 @@ public class MemberService implements UserDetailsService {
         } else {
             authorities.add(new SimpleGrantedAuthority(MemberRole.MEMBER.getValue()));
         }
-        username = uid;
-        System.out.println(username);
+
         return new User(userEntity.getUid(), userEntity.getUpw(), authorities);
     }
 }
