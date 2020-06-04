@@ -14,6 +14,15 @@ var post = {
         $('#btn-replyAdd').on('click', function(){
             _this.replyAdd();
         });
+        $('#btn-replyModify').on('click', function(){
+            _this.replyModify();
+        });
+        $('#btn-replyDelete').on('click', function(){
+            _this.replyDelete();
+        });
+        $(".reply").on("click", function () {
+            _this.replyInfo();
+        });
     },
     list : function() {
         window.location.href = '/';
@@ -65,8 +74,8 @@ var post = {
         // 화면으로부터 입력 받은 변수값의 처리
         var data = {
             postNo : $('#postNo').val(),
-            replyContent : $('#replyContent').val(),
-            replyWriter : $('#replyWriter').val()
+            replyContent : $('#newReplyContent').val(),
+            replyWriter : $('#newReplyWriter').val()
         };
 
         // AJAX 통신 : POST
@@ -85,6 +94,64 @@ var post = {
         }).fail(function (error) {
             alert(error);
         });
+    },
+
+    replyModify : function () {
+        if(confirm('댓글을 수정하시겠습니까?')) {
+            var data = {
+                replyNo: $('#replyNo').val(),
+                replyContent: $('#replyContent').val(),
+                replyWriter: $('#replyWriter').val()
+            };
+            console.log(data);
+            $.ajax({
+                type: "PUT",
+                url: "/replies",
+                dataType: 'json',
+                contentType: 'application/json; charset=utf-8',
+                data: JSON.stringify(data)
+            }).done(function () {
+                // 성공적인 댓글 등록 처리 알림
+                alert("댓글 수정 완료!");
+                location.reload();
+            }).fail(function (error) {
+                alert(error);
+            });
+
+        }
+    },
+
+    replyDelete : function () {
+        if(confirm('댓글을 삭제하시겠습니까?')) {
+            var data = $('#replyNo').val();
+
+            console.log(data);
+            $.ajax({
+                type: "DELETE",
+                url: "/replies",
+                dataType: 'json',
+                contentType: 'application/json; charset=utf-8',
+                data: data
+            }).done(function () {
+                // 성공적인 댓글 등록 처리 알림
+                alert("댓글 삭제 완료!");
+                location.reload();
+            }).fail(function (error) {
+                alert(error);
+            });
+        }
+    },
+    replyInfo : function () {
+        var reply = $(".reply");
+
+        var replyNo = reply.attr("data-replyNo");
+        var replyText = reply.find(".replyText").text();
+        var replyWriter = reply.find(".replyWriter").text();
+        console.log(reply);
+        $("#replyNo").val(replyNo);
+        $("#replyText").val(replyText);
+        $("#replyWriter").val(replyWriter);
     }
 };
+
 post.init();
