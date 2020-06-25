@@ -24,7 +24,7 @@
                     <button type="button" class="btn btn-success active" data-toggle="modal" data-target="#signUpModal">회원가입</button>
 
                     {{#authorize "isAuthenticated()"}}
-                        환영합니다.
+                        {{username}}님 환영합니다.
                         <a href="/logout" class="btn btn-outline-danger my-2 my-sm-0 btn-sm">Logout</a>
                     {{/authorize}}
 

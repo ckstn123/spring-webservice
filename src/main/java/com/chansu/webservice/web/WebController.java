@@ -26,7 +26,8 @@ public class WebController {
         //model.addAttribute("posts", postsService.findAllDesc());
         model.addAttribute("posts", postsService.getPostslist(pageNum));
         model.addAttribute("pageList", postsService.getPageList(pageNum));
-
+        String name = memberService.currentUserName();
+        model.addAttribute("username", name);
         return "main";
     }
 

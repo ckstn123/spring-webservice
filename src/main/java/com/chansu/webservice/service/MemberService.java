@@ -7,8 +7,10 @@ import com.chansu.webservice.dto.member.MemberSaveRequestDto;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.Value;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -30,10 +32,22 @@ public class MemberService implements UserDetailsService {
     public Long create(MemberSaveRequestDto dto) {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         dto.setUpw(passwordEncoder.encode(dto.getUpw()));
+
 //        role.setRoleName("BASIC");
 //        dto.setRoles(Arrays.asList(role));
 
         return memberRepository.save(dto.toEntity()).getId();
+    }
+
+    public String currentUserName() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        Object principal = authentication.getPrincipal();
+        String name = "";
+        if(principal != null && principal instanceof User){
+            name = ((User) authentication.getPrincipal()).getUsername();
+        }
+
+        return name;
     }
 
     @Override
